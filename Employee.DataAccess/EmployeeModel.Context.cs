@@ -12,6 +12,7 @@ namespace Employee.DataAccess
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using Employee.Data;
     
     public partial class EmployeeModelContainer : DbContext
     {

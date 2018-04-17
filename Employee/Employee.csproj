@@ -94,6 +94,10 @@
       <Project>{cb388863-d576-42bc-bfcc-8f9a1233a342}</Project>
       <Name>Employee.DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Employee.Data\Employee.Data.csproj">
+      <Project>{8571abdf-26ac-414c-a86f-8de7a194c1ff}</Project>
+      <Name>Employee.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

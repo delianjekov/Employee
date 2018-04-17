@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
 using Employee.Core.DataAccess;
@@ -23,7 +22,7 @@ namespace Employee.DataAccess
         {
             var result = _context.Set<T>().Find(id);
             if (result == null)
-                throw new KeyNotFoundException(String.Format("Object of type {0} with ID: {1} cannot be found.", typeof(T), id));
+                throw new KeyNotFoundException($"Object of type {typeof(T)} with ID: {id} cannot be found.");
             return result;
         }
 

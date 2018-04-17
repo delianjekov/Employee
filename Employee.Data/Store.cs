@@ -7,26 +7,24 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Employee.DataAccess
+namespace Employee.Data
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Employee
+    public partial class Store
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Employee()
+        public Store()
         {
             this.EmployeeSchedules = new HashSet<EmployeeSchedule>();
         }
     
         public int Id { get; set; }
-        public int TypeId { get; set; }
         public string Name { get; set; }
-        public string Surname { get; set; }
-        public int Age { get; set; }
+        public string AddressLine1 { get; set; }
+        public string AddressLine2 { get; set; }
     
-        public virtual EmployeeType EmployeeType { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EmployeeSchedule> EmployeeSchedules { get; set; }
     }

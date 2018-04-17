@@ -1,5 +1,5 @@
 ﻿using System;
-using Employee.BusinessLayer;
+using Employee.Core.BusinessLayer;
 using Unity;
 using Microsoft.Practices.Unity.Configuration;
 
@@ -7,7 +7,7 @@ namespace Employee
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var container = new UnityContainer();
             container.LoadConfiguration();

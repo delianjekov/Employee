@@ -1,10 +1,11 @@
-﻿using Employee.Core.DataAccess;
+﻿using Employee.Core.BusinessLayer;
+using Employee.Core.DataAccess;
 
 namespace Employee.BusinessLayer
 {
-    public class EmployeeBusinessLogic : BusinessLogic<DataAccess.Employee, int>, IEmployeeBusinessLogic
+    public class EmployeeBusinessLogic : BusinessLogic<Data.Employee, int>, IEmployeeBusinessLogic
     {
-        public EmployeeBusinessLogic(IRepository<DataAccess.Employee, int> employeeRepository) : base(employeeRepository) { }
+        public EmployeeBusinessLogic(IRepository<Data.Employee, int> employeeRepository) : base(employeeRepository) { }
 
         public int GetSalary(int id)
         {

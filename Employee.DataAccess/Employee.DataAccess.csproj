@@ -51,35 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employee.cs">
-      <DependentUpon>EmployeeModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="EmployeeModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeeModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeeModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EmployeeModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeeModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeSchedule.cs">
-      <DependentUpon>EmployeeModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeeType.cs">
-      <DependentUpon>EmployeeModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
-    <Compile Include="Store.cs">
-      <DependentUpon>EmployeeModel.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="EmployeeModel.edmx">
@@ -103,16 +86,15 @@
       <DependentUpon>EmployeeModel.edmx</DependentUpon>
     </Content>
     <Content Include="EmployeeModel.edmx.sql" />
-    <Content Include="EmployeeModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>EmployeeModel.cs</LastGenOutput>
-      <DependentUpon>EmployeeModel.edmx</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Employee.Core\Employee.Core.csproj">
       <Project>{7AEEC3D2-E52D-45D0-81B4-FCA83A15C16F}</Project>
       <Name>Employee.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Employee.Data\Employee.Data.csproj">
+      <Project>{8571abdf-26ac-414c-a86f-8de7a194c1ff}</Project>
+      <Name>Employee.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

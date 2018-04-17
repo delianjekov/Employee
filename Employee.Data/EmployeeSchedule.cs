@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Employee.DataAccess
+namespace Employee.Data
 {
     using System;
     using System.Collections.Generic;

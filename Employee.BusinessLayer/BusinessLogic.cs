@@ -1,5 +1,4 @@
-﻿using System;
-using Employee.Core.BusinessLayer;
+﻿using Employee.Core.BusinessLayer;
 using Employee.Core.DataAccess;
 
 namespace Employee.BusinessLayer
