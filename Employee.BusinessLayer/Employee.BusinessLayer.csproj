@@ -49,6 +49,10 @@
       <Project>{7aeec3d2-e52d-45d0-81b4-fca83a15c16f}</Project>
       <Name>Employee.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Employee.DataAccess\Employee.DataAccess.csproj">
+      <Project>{CB388863-D576-42BC-BFCC-8F9A1233A342}</Project>
+      <Name>Employee.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Employee.Data\Employee.Data.csproj">
       <Project>{8571ABDF-26AC-414C-A86F-8DE7A194C1FF}</Project>
       <Name>Employee.Data</Name>

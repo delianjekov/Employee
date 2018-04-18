@@ -12,7 +12,7 @@ namespace Employee.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class EmployeeType
+    public partial class EmployeeType : Persistable
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public EmployeeType()

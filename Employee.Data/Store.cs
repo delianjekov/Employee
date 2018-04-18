@@ -12,7 +12,7 @@ namespace Employee.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class Store
+    public partial class Store : Persistable
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Store()

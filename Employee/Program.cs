@@ -1,5 +1,5 @@
 ﻿using System;
-using Employee.Core.BusinessLayer;
+using Employee.Core.DataAccess;
 using Unity;
 using Microsoft.Practices.Unity.Configuration;
 
@@ -11,9 +11,18 @@ namespace Employee
         {
             var container = new UnityContainer();
             container.LoadConfiguration();
-            var bl = container.Resolve<IEmployeeBusinessLogic>();
-            var salary = bl.GetSalary(1);
-            Console.WriteLine("Employee 1 has salary {0}", salary);
+            var factory = container.Resolve<IUnitOfWorkFactory>();
+
+            using (var unitOfWork = factory.ReadOnly)
+            {
+                var employeeRepository = unitOfWork.GetRepository<Data.Employee>();
+                var employees = employeeRepository.GetAll();
+                foreach (var employee in employees)
+                {
+                    Console.WriteLine("{0} {1} at the age of {2} has salary {3}", employee.Name, employee.Surname,
+                        employee.Age, employee.EmployeeType.Salary);
+                }
+            }
         }
     }
 }

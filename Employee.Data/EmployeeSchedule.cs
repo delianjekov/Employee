@@ -12,7 +12,7 @@ namespace Employee.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class EmployeeSchedule
+    public partial class EmployeeSchedule : Persistable
     {
         public int EmployeeId { get; set; }
         public int StoreId { get; set; }
