@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogicFactory.cs" />
     <Compile Include="BusinessLogic.cs" />
     <Compile Include="EmployeeBusinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

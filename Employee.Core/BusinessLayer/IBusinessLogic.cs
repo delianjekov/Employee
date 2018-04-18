@@ -1,9 +1,7 @@
-﻿using Employee.Data;
+﻿using Employee.Core.DataAccess;
+using Employee.Data;
 
 namespace Employee.Core.BusinessLayer
 {
-    public interface IBusinessLogic<out T, in TKey> where T : Persistable
-    {
-        T FindById(TKey id);
-    }
+    public interface IBusinessLogic<T, in TKey> : IRepository<T, TKey> where T : Persistable { }
 }

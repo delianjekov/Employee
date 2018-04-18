@@ -71,6 +71,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLayer\IBusinessLogicFactory.cs" />
     <Compile Include="BusinessLayer\IBusinessLogic.cs" />
     <Compile Include="BusinessLayer\IEmployeeBusinessLogic.cs" />
     <Compile Include="DataAccess\IRepository.cs" />
